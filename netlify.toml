@@ -1,5 +1,5 @@
 [build]
-  command = "yarn rw deploy netlify"
+  command = "yarn rw build api && yarn rw build web --no-prerender"
   publish = "web/dist"
   functions = "api/dist/functions"
 
